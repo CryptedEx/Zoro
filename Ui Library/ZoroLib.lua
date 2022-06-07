@@ -272,14 +272,20 @@ local UICorner_8 = Instance.new("UICorner")
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
     Main.Size = UDim2.new(0, 525, 0, 318)
-
+Main.Image = ""
     MainCorner.CornerRadius = UDim.new(0, 4)
     MainCorner.Name = "MainCorner"
     MainCorner.Parent = Main
     
     
-    
-    
+    Profile.Name = "Profile"
+Profile.Parent = Main
+Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Profile.BorderSizePixel = 0
+Profile.Position = UDim2.new(0.929523826, 0, 0, 0)
+Profile.Size = UDim2.new(0, 31, 0, 30)
+Profile.Image = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
+
     ZoroRewriteTEXT.Name = "ZoroRewriteTEXT"
 ZoroRewriteTEXT.Parent = Main
 ZoroRewriteTEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -294,24 +300,6 @@ ZoroRewriteTEXT.TextScaled = true
 ZoroRewriteTEXT.TextSize = 30.000
 ZoroRewriteTEXT.TextWrapped = true
 
-Profile.Name = "Profile"
-Profile.Parent = Main
-Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Profile.BorderSizePixel = 0
-Profile.Position = UDim2.new(0.929523826, 0, 0, 0)
-Profile.Size = UDim2.new(0, 31, 0, 30)
-Profile.Image = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
-local Toggle = false
-Profile.MouseButton1Down:connect(function()
-Toggle = not Toggle
-end)
-game:GetService('RunService').Stepped:connect(function()
-    if Toggle then
-        UserFrame.Visible = true
-    else
-        UserFrame.Visible = false
-end 
-    end)
 UserFrame.Name = "UserFrame"
 UserFrame.Parent = Profile
 UserFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
