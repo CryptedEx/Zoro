@@ -594,17 +594,16 @@ minimise.TextSize = 14.000
 UICorner_4.CornerRadius = UDim.new(0.5, 0)
 UICorner_4.Parent = minimise
 
-close.Name = "close"
-close.Parent = Main
-close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-close.BorderSizePixel = 0
-close.Position = UDim2.new(0.815238059, 0, 0.0251572318, 0)
-close.Size = UDim2.new(0, 13, 0, 13)
-close.Font = Enum.Font.SourceSans
-close.Text = ""
-close.TextColor3 = Color3.fromRGB(0, 0, 0)
-close.TextSize = 14.000
- close.MouseButton1Click:Connect(function()
+ close.Name = "close"
+    close.Parent = MainHeader
+    close.BackgroundTransparency = 1.000
+    close.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
+    close.Size = UDim2.new(0, 21, 0, 21)
+    close.ZIndex = 2
+    close.Image = "rbxassetid://3926305904"
+    close.ImageRectOffset = Vector2.new(284, 4)
+    close.ImageRectSize = Vector2.new(24, 24)
+    close.MouseButton1Click:Connect(function()
         game.TweenService:Create(close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
             ImageTransparency = 1
         }):Play()
@@ -616,8 +615,8 @@ close.TextSize = 14.000
         wait(1)
         ScreenGui:Destroy()
     end)
-UICorner_5.CornerRadius = UDim.new(0.5, 0)
-UICorner_5.Parent = close
+
+
 
 Shadow_2.Name = "Shadow"
 Shadow_2.Parent = Main
