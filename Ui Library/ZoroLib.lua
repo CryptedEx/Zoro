@@ -1,16 +1,3 @@
-_G.Settings = {
-    ["key"] = getfenv().Key,
-    ["site"] = "https://cryptx64.000webhostapp.com/Account/key.php?key=",
-    ["text"] = "Wrong key!, please contact our staff/owner";
-}
-local ZoroUser = game.Players.LocalPlayer
-local https = game:HttpGet(_G.Settings.site .. _G.Settings.key)
-local instance = game.Players.LocalPlayer
-if https == "true" then 
-_G.GroupID = "14806953"
-if ZoroUser:IsInGroup(_G.GroupID) then
-print("you are in zoro industries group. GROUPID: " .. _G.GroupID)
-print("Your key is: " .. _G.Settings.key .. ", and you have passed the key system.")
 local Kavo = {}
 
 local tween = game:GetService("TweenService")
@@ -259,6 +246,7 @@ local Shadow_2 = Instance.new("ImageLabel")
 local ShadowTwo = Instance.new("ImageLabel")
 local Neon = Instance.new("ImageLabel")
 local KeySystemFrame = Instance.new("ImageLabel")
+KeySystemFrame.Visible = false;
 local Pattern = Instance.new("ImageLabel")
 local Frame_10 = Instance.new("ImageLabel")
 local Frame_11 = Instance.new("ImageLabel")
@@ -4163,13 +4151,4 @@ UICorner_8.Parent = SubmitKey
     return Tabs
 end
 return Kavo
-end
-elseif https == "false" then
-instance:Kick(_G.Settings.text)
-wait(1)
-rconsoleclear();
-rconsolename('Zoro [Key System]')
-rconsoleprint('Wrong key!, please contact our staff | owner\n')
-rconsoleprint('The Key you have entered: ' .. _G.Key .. "\n")
-rconsoleprint('Solution: [#] Double check the key for any missing uppercase or lowercase. [#] check zoro server for the key. [#] dm staff or support team for the key system issue. [#] check exploit support channel. \n')
 end
