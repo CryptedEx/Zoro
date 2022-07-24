@@ -199,6 +199,7 @@ function Kavo.CreateLib(kavName, themeList)
     local headerCover = Instance.new("UICorner")
     local coverup = Instance.new("Frame")
     local title = Instance.new("TextLabel")
+    local close = Instance.new("ImageButton")
     local MainSide = Instance.new("Frame")
     local sideCorner = Instance.new("UICorner")
     local coverup_2 = Instance.new("Frame")
@@ -207,46 +208,6 @@ function Kavo.CreateLib(kavName, themeList)
     local pages = Instance.new("Frame")
     local Pages = Instance.new("Folder")
     local infoContainer = Instance.new("Frame")
-    local TextLabel = Instance.new("TextLabel")
-local TextLabel_2 = Instance.new("TextLabel")
-local ZoroRewriteTEXT = Instance.new("TextLabel")
-local Profile = Instance.new("ImageButton")
-local UserFrame = Instance.new("ImageLabel")
-local Shadow = Instance.new("ImageLabel")
-local Frame = Instance.new("Frame")
-local Frame_2 = Instance.new("Frame")
-local Frame_3 = Instance.new("Frame")
-local Profile2 = Instance.new("ImageButton")
-local UICorner = Instance.new("UICorner")
-local SettingsText = Instance.new("TextLabel")
-local UsernameText = Instance.new("TextLabel")
-local PlayerNameText = Instance.new("TextLabel")
-local ExploitNameText = Instance.new("TextLabel")
-local ExploitText = Instance.new("TextLabel")
-local Frame_4 = Instance.new("Frame")
-local KeyNameText = Instance.new("TextLabel")
-local KeyText = Instance.new("TextLabel")
-local UserBottomFrame = Instance.new("ImageLabel")
-local Frame_5 = Instance.new("Frame")
-local brightness_3 = Instance.new("ImageButton")
-local Frame_6 = Instance.new("Frame")
-local account_circle = Instance.new("ImageButton")
-local cloud_queue = Instance.new("ImageButton")
-local Frame_7 = Instance.new("Frame")
-local Frame_8 = Instance.new("Frame")
-local Frame_9 = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local resize = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local minimise = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local close = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
-local Shadow_2 = Instance.new("ImageLabel")
-local ShadowTwo = Instance.new("ImageLabel")
-local Neon = Instance.new("ImageLabel")
-
-local UICorner_8 = Instance.new("UICorner")
 
     local blurFrame = Instance.new("Frame")
 
@@ -272,363 +233,10 @@ local UICorner_8 = Instance.new("UICorner")
     Main.ClipsDescendants = true
     Main.Position = UDim2.new(0.336503863, 0, 0.275485456, 0)
     Main.Size = UDim2.new(0, 525, 0, 318)
-Main.Image = ""
+
     MainCorner.CornerRadius = UDim.new(0, 4)
     MainCorner.Name = "MainCorner"
     MainCorner.Parent = Main
-    
-    
-    Profile.Name = "Profile"
-Profile.Parent = Main
-Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Profile.BorderSizePixel = 0
-Profile.Position = UDim2.new(0.929523826, 0, 0, 0)
-Profile.Size = UDim2.new(0, 31, 0, 30)
-Profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
-
-    ZoroRewriteTEXT.Name = "ZoroRewriteTEXT"
-ZoroRewriteTEXT.Parent = Main
-ZoroRewriteTEXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ZoroRewriteTEXT.BackgroundTransparency = 1.000
-ZoroRewriteTEXT.BorderSizePixel = 0
-ZoroRewriteTEXT.Position = UDim2.new(0, 0, 1.02201259, 0)
-ZoroRewriteTEXT.Size = UDim2.new(0, 525, 0, 42)
-ZoroRewriteTEXT.Font = Enum.Font.SourceSansBold
-ZoroRewriteTEXT.Text = "// ZORO - THIS IS A WORK IN PROGRESS AND DOES NOT REPRESENT THE FINAL REWRITE PRODUCT"
-ZoroRewriteTEXT.TextColor3 = Color3.fromRGB(112, 112, 112)
-ZoroRewriteTEXT.TextScaled = true
-ZoroRewriteTEXT.TextSize = 30.000
-ZoroRewriteTEXT.TextWrapped = true
-
-UserFrame.Name = "UserFrame"
-UserFrame.Parent = Profile
-UserFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
-UserFrame.BackgroundTransparency = 1.000
-UserFrame.Position = UDim2.new(-6.12903214, 0, 1.20000005, 0)
-UserFrame.Size = UDim2.new(0, 221, 0, 263)
-UserFrame.Visible = false
-UserFrame.Image = "rbxassetid://3570695787"
-UserFrame.ImageColor3 = Color3.fromRGB(20, 20, 20)
-UserFrame.ScaleType = Enum.ScaleType.Slice
-UserFrame.SliceCenter = Rect.new(100, 100, 100, 100)
-UserFrame.SliceScale = 0.070
-
-Shadow.Name = "Shadow"
-Shadow.Parent = UserFrame
-Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Shadow.BackgroundTransparency = 1.000
-Shadow.Position = UDim2.new(0, -15, 0, -15)
-Shadow.Size = UDim2.new(1, 30, 1, 30)
-Shadow.Image = "http://www.roblox.com/asset/?id=5554236805"
-Shadow.ScaleType = Enum.ScaleType.Slice
-Shadow.SliceCenter = Rect.new(23, 23, 277, 277)
-
-Frame.Parent = UserFrame
-Frame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0, 0, 0.277566552, 0)
-Frame.Size = UDim2.new(0, 221, 0, 2)
-
-Frame_2.Parent = UserFrame
-Frame_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame_2.BorderSizePixel = 0
-Frame_2.Position = UDim2.new(0, 0, 0.414448619, 0)
-Frame_2.Size = UDim2.new(0, 221, 0, 2)
-
-Frame_3.Parent = UserFrame
-Frame_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame_3.BorderSizePixel = 0
-Frame_3.Position = UDim2.new(0, 0, 0.543726206, 0)
-Frame_3.Size = UDim2.new(0, 221, 0, 2)
-
-Profile2.Name = "Profile2"
-Profile2.Parent = UserFrame
-Profile2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Profile2.BorderSizePixel = 0
-Profile2.Position = UDim2.new(0.3910622, 0, 0.102661595, 0)
-Profile2.Size = UDim2.new(0, 43, 0, 40)
-Profile2.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
-
-UICorner.CornerRadius = UDim.new(0.5, 0)
-UICorner.Parent = Profile2
-
-SettingsText.Name = "Settings Text"
-SettingsText.Parent = UserFrame
-SettingsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SettingsText.BackgroundTransparency = 1.000
-SettingsText.BorderSizePixel = 0
-SettingsText.Size = UDim2.new(0, 221, 0, 27)
-SettingsText.Font = Enum.Font.Gotham
-SettingsText.Text = "Settings"
-SettingsText.TextColor3 = Color3.fromRGB(135, 135, 135)
-SettingsText.TextSize = 14.000
-
-UsernameText.Name = "Username Text"
-UsernameText.Parent = UserFrame
-UsernameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UsernameText.BackgroundTransparency = 1.000
-UsernameText.BorderSizePixel = 0
-UsernameText.Size = UDim2.new(0, 86, 0, 169)
-UsernameText.Font = Enum.Font.Gotham
-UsernameText.Text = "Username"
-UsernameText.TextColor3 = Color3.fromRGB(135, 135, 135)
-UsernameText.TextSize = 12.000
-
-PlayerNameText.Name = "PlayerName Text"
-PlayerNameText.Parent = UserFrame
-PlayerNameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PlayerNameText.BackgroundTransparency = 1.000
-PlayerNameText.BorderSizePixel = 0
-PlayerNameText.Position = UDim2.new(0.0678733066, 0, 0.129277572, 0)
-PlayerNameText.Size = UDim2.new(0, 206, 0, 135)
-PlayerNameText.Font = Enum.Font.Gotham
-PlayerNameText.Text = ""
-PlayerNameText.TextColor3 = Color3.fromRGB(203, 203, 203)
-PlayerNameText.TextSize = 10.000
-PlayerNameText.TextXAlignment = Enum.TextXAlignment.Left
-PlayerNameText = game.Players.LocalPlayer.Name .. " | " .. game.Players.LocalPlayer.UserId 
-
-ExploitNameText.Name = "ExploitName Text"
-ExploitNameText.Parent = UserFrame
-ExploitNameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ExploitNameText.BackgroundTransparency = 1.000
-ExploitNameText.BorderSizePixel = 0
-ExploitNameText.Position = UDim2.new(0, 0, 0.277566552, 0)
-ExploitNameText.Size = UDim2.new(0, 67, 0, 92)
-ExploitNameText.Font = Enum.Font.Gotham
-ExploitNameText.Text = "Exploit"
-ExploitNameText.TextColor3 = Color3.fromRGB(135, 135, 135)
-ExploitNameText.TextSize = 12.000
-
-ExploitText.Name = "Exploit Text"
-ExploitText.Parent = UserFrame
-ExploitText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ExploitText.BackgroundTransparency = 1.000
-ExploitText.BorderSizePixel = 0
-ExploitText.Position = UDim2.new(0.0678733066, 0, 0.351002336, 0)
-ExploitText.Size = UDim2.new(0, 206, 0, 85)
-ExploitText.Font = Enum.Font.Gotham
-ExploitText.Text = "JJSploit Premium"
-ExploitText.TextColor3 = Color3.fromRGB(203, 203, 203)
-ExploitText.TextSize = 10.000
-ExploitText.TextXAlignment = Enum.TextXAlignment.Left
-if KRNL_LOADED then
-ExploitText.Text = "Krnl"
-end
-if syn then
-ExploitText.Text = "Synapse X"
-end
-if PROTOSMASHER_LOADED then
-ExploitText.Text = "Protosmasher"
-end;
-if is_sirhurt_closure then
-ExploitText.Text = "Sirhurt"
-end;
-if sentinelbuy() then
-ExploitText.Text = "Sentinel"
-end;
-if SONA_LOADED then
-ExploitText.Text = "Sona"
-end;
-if getexecutorname() then
-ExploitText.Text = "Script-Ware"
-end
-if WrapGlobal then
-ExploitText.Text = "WeAreDevs API"
-end;
-if isvm then
-ExploitText.Text = "Proxo"
-end
-if shadow_env then
-ExploitText.Text = "Shadow"
-end
-if jit then
-ExploitText.Text = "EasyExploits API"
-end;
-if getscriptsenvs then
-ExploitText.Text = "Calamari"
-end
-if OXYGEN_LOADED then
-ExploitText.Text = "Oxygen U"
-end;
-if IsElectron then
-ExploitText.Text = "Electron"
-end;
-
-Frame_4.Parent = UserFrame
-Frame_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Frame_4.BorderSizePixel = 0
-Frame_4.Position = UDim2.new(0, 0, 0.700812221, 0)
-Frame_4.Size = UDim2.new(0, 221, 0, 3)
-
-
-UserBottomFrame.Name = "UserBottomFrame"
-UserBottomFrame.Parent = UserFrame
-UserBottomFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UserBottomFrame.BackgroundTransparency = 1.000
-UserBottomFrame.Position = UDim2.new(0, 0, 0.851710975, 0)
-UserBottomFrame.Size = UDim2.new(0, 221, 0, 39)
-UserBottomFrame.Image = "rbxassetid://3570695787"
-UserBottomFrame.ImageColor3 = Color3.fromRGB(25, 25, 25)
-UserBottomFrame.ScaleType = Enum.ScaleType.Slice
-UserBottomFrame.SliceCenter = Rect.new(100, 100, 100, 100)
-UserBottomFrame.SliceScale = 0.070
-
-Frame_5.Parent = UserBottomFrame
-Frame_5.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_5.BorderSizePixel = 0
-Frame_5.Position = UDim2.new(0.0678733066, 0, 0.774788082, 0)
-Frame_5.Size = UDim2.new(0, 52, 0, 1)
-
-brightness_3.Name = "brightness_3"
-brightness_3.Parent = UserBottomFrame
-brightness_3.BackgroundTransparency = 1.000
-brightness_3.Position = UDim2.new(0.441176474, 0, 0.115384594, 0)
-brightness_3.Size = UDim2.new(0, 25, 0, 25)
-brightness_3.ZIndex = 2
-brightness_3.Image = "rbxassetid://3926307971"
-brightness_3.ImageColor3 = Color3.fromRGB(163, 162, 165)
-brightness_3.ImageRectOffset = Vector2.new(324, 204)
-brightness_3.ImageRectSize = Vector2.new(36, 36)
-
-Frame_6.Parent = UserBottomFrame
-Frame_6.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_6.BorderSizePixel = 0
-Frame_6.Position = UDim2.new(0.389140278, 0, 0.774788082, 0)
-Frame_6.Size = UDim2.new(0, 49, 0, 1)
-
-account_circle.Name = "account_circle"
-account_circle.Parent = UserBottomFrame
-account_circle.BackgroundTransparency = 1.000
-account_circle.Position = UDim2.new(0.128959268, 0, 0.115384609, 0)
-account_circle.Size = UDim2.new(0, 25, 0, 25)
-account_circle.ZIndex = 2
-account_circle.Image = "rbxassetid://3926307971"
-account_circle.ImageColor3 = Color3.fromRGB(163, 162, 165)
-account_circle.ImageRectOffset = Vector2.new(124, 204)
-account_circle.ImageRectSize = Vector2.new(36, 36)
-
-cloud_queue.Name = "cloud_queue"
-cloud_queue.Parent = UserBottomFrame
-cloud_queue.BackgroundTransparency = 1.000
-cloud_queue.Position = UDim2.new(0.771493196, 0, 0.115384609, 0)
-cloud_queue.Size = UDim2.new(0, 25, 0, 25)
-cloud_queue.ZIndex = 2
-cloud_queue.Image = "rbxassetid://3926305904"
-cloud_queue.ImageColor3 = Color3.fromRGB(163, 162, 165)
-cloud_queue.ImageRectOffset = Vector2.new(324, 844)
-cloud_queue.ImageRectSize = Vector2.new(36, 36)
-
-Frame_7.Parent = UserBottomFrame
-Frame_7.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_7.BorderSizePixel = 0
-Frame_7.Position = UDim2.new(0.710407257, 0, 0.774788082, 0)
-Frame_7.Size = UDim2.new(0, 55, 0, 1)
-
-Frame_8.Parent = UserBottomFrame
-Frame_8.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
-Frame_8.BorderSizePixel = 0
-Frame_8.Position = UDim2.new(0, 0, -0.15384616, 0)
-Frame_8.Size = UDim2.new(0, 221, 0, 6)
-
-Frame_9.Parent = UserFrame
-Frame_9.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
-Frame_9.BorderSizePixel = 0
-Frame_9.Position = UDim2.new(0, 0, 0.851710975, 0)
-Frame_9.Size = UDim2.new(0, 221, 0, 6)
-
-UICorner_2.CornerRadius = UDim.new(0.5, 0)
-UICorner_2.Parent = Profile
-
-resize.Name = "resize"
-resize.Parent = Main
-resize.BackgroundColor3 = Color3.fromRGB(76, 255, 0)
-resize.BorderSizePixel = 0
-resize.Position = UDim2.new(0.893333316, 0, 0.0251572318, 0)
-resize.Size = UDim2.new(0, 13, 0, 13)
-resize.Font = Enum.Font.SourceSans
-resize.Text = ""
-resize.TextColor3 = Color3.fromRGB(0, 0, 0)
-resize.TextSize = 14.000
-
-UICorner_3.CornerRadius = UDim.new(0.5, 0)
-UICorner_3.Parent = resize
-
-minimise.Name = "minimise"
-minimise.Parent = Main
-minimise.BackgroundColor3 = Color3.fromRGB(255, 247, 0)
-minimise.BorderSizePixel = 0
-minimise.Position = UDim2.new(0.85523802, 0, 0.0251572318, 0)
-minimise.Size = UDim2.new(0, 13, 0, 13)
-minimise.Font = Enum.Font.SourceSans
-minimise.Text = ""
-minimise.TextColor3 = Color3.fromRGB(0, 0, 0)
-minimise.TextSize = 14.000
-
-UICorner_4.CornerRadius = UDim.new(0.5, 0)
-UICorner_4.Parent = minimise
-
- close.Name = "close"
-    close.Parent = MainHeader
-    close.BackgroundTransparency = 1.000
-    close.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
-    close.Size = UDim2.new(0, 21, 0, 21)
-    close.ZIndex = 2
-    close.Image = "rbxassetid://3926305904"
-    close.ImageRectOffset = Vector2.new(284, 4)
-    close.ImageRectSize = Vector2.new(24, 24)
-    close.MouseButton1Click:Connect(function()
-        game.TweenService:Create(close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
-            ImageTransparency = 1
-        }):Play()
-        wait()
-        game.TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
-			Size = UDim2.new(0,0,0,0),
-			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
-		}):Play()
-        wait(1)
-        ScreenGui:Destroy()
-    end)
-
-
-
-Shadow_2.Name = "Shadow"
-Shadow_2.Parent = Main
-Shadow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Shadow_2.BackgroundTransparency = 1.000
-Shadow_2.Position = UDim2.new(0, -15, 0, -15)
-Shadow_2.Selectable = true
-Shadow_2.Size = UDim2.new(1, 30, 1, 30)
-Shadow_2.Image = "http://www.roblox.com/asset/?id=5761498316"
-Shadow_2.ImageColor3 = Color3.fromRGB(255, 110, 74)
-Shadow_2.ScaleType = Enum.ScaleType.Slice
-Shadow_2.SliceCenter = Rect.new(17, 17, 283, 283)
-
-ShadowTwo.Name = "ShadowTwo"
-ShadowTwo.Parent = Main
-ShadowTwo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ShadowTwo.BackgroundTransparency = 1.000
-ShadowTwo.Position = UDim2.new(0, -15, 0, -15)
-ShadowTwo.Selectable = true
-ShadowTwo.Size = UDim2.new(1, 30, 1, 30)
-ShadowTwo.Image = "http://www.roblox.com/asset/?id=5761504593"
-ShadowTwo.ImageColor3 = Color3.fromRGB(255, 110, 74)
-ShadowTwo.ScaleType = Enum.ScaleType.Slice
-ShadowTwo.SliceCenter = Rect.new(17, 17, 283, 283)
-
-Neon.Name = "Neon"
-Neon.Parent = Main
-Neon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Neon.BackgroundTransparency = 1.000
-Neon.Position = UDim2.new(0, -15, 0, -15)
-Neon.Size = UDim2.new(1, 30, 1, 30)
-Neon.Image = "http://www.roblox.com/asset/?id=5554236805"
-Neon.ImageColor3 = Color3.fromRGB(255, 110, 74)
-Neon.ScaleType = Enum.ScaleType.Slice
-Neon.SliceCenter = Rect.new(23, 23, 277, 277)
-
-
-
 
     MainHeader.Name = "MainHeader"
     MainHeader.Parent = Main
@@ -660,6 +268,28 @@ Neon.SliceCenter = Rect.new(23, 23, 277, 277)
     title.TextColor3 = Color3.fromRGB(245, 245, 245)
     title.TextSize = 16.000
     title.TextXAlignment = Enum.TextXAlignment.Left
+
+    close.Name = "close"
+    close.Parent = MainHeader
+    close.BackgroundTransparency = 1.000
+    close.Position = UDim2.new(0.949999988, 0, 0.137999997, 0)
+    close.Size = UDim2.new(0, 21, 0, 21)
+    close.ZIndex = 2
+    close.Image = "rbxassetid://3926305904"
+    close.ImageRectOffset = Vector2.new(284, 4)
+    close.ImageRectSize = Vector2.new(24, 24)
+    close.MouseButton1Click:Connect(function()
+        game.TweenService:Create(close, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.InOut), {
+            ImageTransparency = 1
+        }):Play()
+        wait()
+        game.TweenService:Create(Main, TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+			Size = UDim2.new(0,0,0,0),
+			Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
+		}):Play()
+        wait(1)
+        ScreenGui:Destroy()
+    end)
 
     MainSide.Name = "MainSide"
     MainSide.Parent = Main
