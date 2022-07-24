@@ -453,8 +453,6 @@ ExploitText.Text = "Oxygen U"
 end;
 if IsElectron then
 ExploitText.Text = "Electron"
-else
-ExploitText.Text = "Couldnt identify executor."
 end;
 
 Frame_4.Parent = UserFrame
@@ -463,30 +461,6 @@ Frame_4.BorderSizePixel = 0
 Frame_4.Position = UDim2.new(0, 0, 0.700812221, 0)
 Frame_4.Size = UDim2.new(0, 221, 0, 3)
 
-KeyNameText.Name = "KeyName Text"
-KeyNameText.Parent = UserFrame
-KeyNameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KeyNameText.BackgroundTransparency = 1.000
-KeyNameText.BorderSizePixel = 0
-KeyNameText.Position = UDim2.new(0, 0, 0.543726206, 0)
-KeyNameText.Size = UDim2.new(0, 86, 0, 22)
-KeyNameText.Font = Enum.Font.Gotham
-KeyNameText.Text = "Valid Key"
-KeyNameText.TextColor3 = Color3.fromRGB(135, 135, 135)
-KeyNameText.TextSize = 12.000
-
-KeyText.Name = "Key Text"
-KeyText.Parent = UserFrame
-KeyText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-KeyText.BackgroundTransparency = 1.000
-KeyText.BorderSizePixel = 0
-KeyText.Position = UDim2.new(0.0678733066, 0, 0.627376378, 0)
-KeyText.Size = UDim2.new(0, 206, 0, 19)
-KeyText.Font = Enum.Font.Gotham
-KeyText.Text = SubmitKeyTextBox.Text
-KeyText.TextColor3 = Color3.fromRGB(203, 203, 203)
-KeyText.TextSize = 10.000
-KeyText.TextXAlignment = Enum.TextXAlignment.Left
 
 UserBottomFrame.Name = "UserBottomFrame"
 UserBottomFrame.Parent = UserFrame
