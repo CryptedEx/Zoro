@@ -278,7 +278,15 @@ local UICorner_8 = Instance.new("UICorner")
     MainCorner.Parent = Main
 	
   
-    
+       MainHeader.Name = "MainHeader"
+    MainHeader.Parent = Main
+    MainHeader.BackgroundColor3 = themeList.Header
+    Objects[MainHeader] = "BackgroundColor3"
+    MainHeader.Size = UDim2.new(0, 525, 0, 29)
+    headerCover.CornerRadius = UDim.new(0, 4)
+    headerCover.Name = "headerCover"
+    headerCover.Parent = MainHeader
+
     
     Profile.Name = "Profile"
 Profile.Parent = Main
