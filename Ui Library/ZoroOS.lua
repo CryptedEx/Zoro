@@ -284,7 +284,7 @@ Profile.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Profile.BorderSizePixel = 0
 Profile.Position = UDim2.new(0.929523826, 0, 0, 0)
 Profile.Size = UDim2.new(0, 31, 0, 30)
-Profile.Image = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
+Profile.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
 
     ZoroRewriteTEXT.Name = "ZoroRewriteTEXT"
 ZoroRewriteTEXT.Parent = Main
@@ -347,7 +347,7 @@ Profile2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Profile2.BorderSizePixel = 0
 Profile2.Position = UDim2.new(0.3910622, 0, 0.102661595, 0)
 Profile2.Size = UDim2.new(0, 43, 0, 40)
-Profile2.Image = userinfo["pfp"] or "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
+Profile2.Image = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"
 
 UICorner.CornerRadius = UDim.new(0.5, 0)
 UICorner.Parent = Profile2
