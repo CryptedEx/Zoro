@@ -129,7 +129,8 @@ end
 
 local chosenGame = ({
     [5490351219] = "clickermadness.lua",
-    [155615604] = "prisonlife.lua"
+    [155615604] = "prisonlife.lua",
+    [9498006165] = "tappingsimulator.lua"
 })[game.PlaceId]
 
 if chosenGame then
