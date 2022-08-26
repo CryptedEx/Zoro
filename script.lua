@@ -88,18 +88,4 @@ end
 
 if game.GameId == 155615604 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CryptedEx/Zoro/main/Games/test3", true))()
-else
-     local sound = Instance.new("Sound", game.Workspace)
-sound.SoundId = "rbxassetid://5204290066";
-game.StarterGui:SetCore("SendNotification", {
-Title = "Zoro V2 [ERROR]"; 
-Text = "Hi" .. game.Players.LocalPlayer.Name ..", ZoroV2 does not support this game"; 
-Icon = "https://www.roblox.com/headshot-thumbnail/image?userId=".. game.Players.LocalPlayer.UserId .."&width=420&height=420&format=png"; 
-Duration = 10; 
-sound:Play()
-})
-        rconsolename("Zoro V2")
-        rconsoleclear()
-        rconsoleprint("@@RED@@")
-        rconsoleprint("We have detected this game isnt on our hoster!\n")
     end
