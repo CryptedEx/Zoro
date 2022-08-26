@@ -88,7 +88,6 @@ end
 
 if game.GameId == 155615604 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/CryptedEx/Zoro/main/Games/test3", true))()
-end;
 else
      local sound = Instance.new("Sound", game.Workspace)
 sound.SoundId = "rbxassetid://5204290066";
