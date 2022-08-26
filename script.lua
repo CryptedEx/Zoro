@@ -86,14 +86,9 @@ end
 
 --[[ ==========  Game Loader  ========== ]]
 
-local chosenGame = ({
-    [5490351219] = "clickermadness.lua",
-    [155615604] = "prisonlife.lua",
-    [9498006165] = "tappingsimulator.lua"
-})[game.PlaceId]
-
-if chosenGame then
-    loadstring(game:HttpGetAsync("https://notcryptex.000webhostapp.com/Games/" .. chosenGame))()
+if game.GameId == 155615604 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CryptedEx/Zoro/main/Games/test3", true))()
+end;
 else
      local sound = Instance.new("Sound", game.Workspace)
 sound.SoundId = "rbxassetid://5204290066";
