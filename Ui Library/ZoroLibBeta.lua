@@ -288,8 +288,9 @@ function Kavo.CreateLib(kavName, themeList)
 			TweenService:Create(
 				Main,
 				TweenInfo.new(.2, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				
 				{BackgroundTransparency = 1}
-				Position = UDim2.new(0, Main.AbsolutePosition.X + (Main.AbsoluteSize.X / 2), 0, Main.AbsolutePosition.Y + (Main.AbsoluteSize.Y / 2))
+				
 			):Play()
 			wait(.2)
         ScreenGui:Destroy()
